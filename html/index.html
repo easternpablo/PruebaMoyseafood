@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Usuarios</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+    <h1>Listado de Usuarios</h1>
+    <div>
+        <label>Filtrado: </label>
+        <input id="search" type="text" placeholder="Search..."/>
+    </div>
+    <br><br>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+            <script>
+                $(document).ready( function(){
+                    fetch('https://jsonplaceholder.typicode.com/users')
+                        .then((response) => response.json())
+                        .then((json) => console.log(json));</script>
+                <tr>
+                    <td><script>json => name</script></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            <script>
+            });
+            </script>
+        </tbody>
+    </table>
+</body>
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/ListarUsuarios.js"></script>
+</html>
